@@ -20,7 +20,7 @@ Definitions
 
 For the purposes of this Return and Refund Policy:
 
-*   **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to O-LAP DESIGNS PRIVATE LIMITED, 201/C-WING, SILVER BELL VASANT GARDEN, TIVARI GALLI, NEAR ASTHA HOSPITAL, MULUND (W) MUMBAI Mumbai City MH 400080 IN .
+*   **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to 201/C-WING, SILVER BELL VASANT GARDEN, MULUND (W) MUMBAI MH 400080 IN.
     
 *   **Goods** refer to the items offered for sale on the Service.
     

@@ -22,7 +22,7 @@ For the purposes of this Privacy Policy:
 
 *   **Account** means a unique account created for You to access our Service or parts of our Service.
     
-*   **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to O-LAP DESIGNS PRIVATE LIMITED, C301 Silver Bell, LBS Marg, Mulund, Mumbai - 400081.
+*   **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to O-LAP DESIGNS PRIVATE LIMITED, 201/C-WING, SILVER BELL VASANT GARDEN, MULUND (W) MUMBAI MH 400080 IN.
     
 *   **Cookies** are small files that are placed on Your computer, mobile device or any other device by a website, containing the details of Your browsing history on that website among its many uses.
     
