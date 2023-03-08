@@ -16,7 +16,7 @@ Definitions
 
 For the purposes of this Disclaimer:
 
-*   **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Disclaimer) refers to O-LAP DESIGNS PRIVATE LIMITED, 201/C-WING, SILVER BELL VASANT GARDEN, TIVARI GALLI, NEAR ASTHA HOSPITAL, MULUND (W) MUMBAI Mumbai City MH 400080 IN .
+*   **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Disclaimer) refers to O-LAP DESIGNS PRIVATE LIMITED, 201/C-WING, SILVER BELL VASANT GARDEN, MULUND (W) MUMBAI MH 400080 IN.
 *   **Service** refers to the Website.
 *   **You** means the individual accessing the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
 *   **Website** refers to O-LAP, accessible from [https://o-lap.com/](https://o-lap.com/)

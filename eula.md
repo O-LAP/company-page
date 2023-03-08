@@ -22,7 +22,7 @@ For the purposes of this End-User License Agreement:
     
 *   **Application** means any software program provided by the Company downloaded by You to a Device
     
-*   **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to O-LAP DESIGNS PRIVATE LIMITED, 201/C-WING, SILVER BELL VASANT GARDEN, TIVARI GALLI, NEAR ASTHA HOSPITAL, MULUND (W) MUMBAI Mumbai City MH 400080 IN .
+*   **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to O-LAP DESIGNS PRIVATE LIMITED, 201/C-WING, SILVER BELL VASANT GARDEN, MULUND (W) MUMBAI MH 400080 IN.
     
 *   **Content** refers to content such as text, images, or other information that can be posted, uploaded, linked to or otherwise made available by You, regardless of the form of that content.
     
