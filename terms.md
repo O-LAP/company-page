@@ -22,7 +22,7 @@ For the purposes of these Terms and Conditions:
     
 *   **Country** refers to: Maharashtra, India
     
-*   **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to O-LAP DESIGNS PRIVATE LIMITED, 201/C-WING, SILVER BELL VASANT GARDEN, TIVARI GALLI, NEAR ASTHA HOSPITAL, MULUND (W) MUMBAI Mumbai City MH 400080 IN .
+*   **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to O-LAP DESIGNS PRIVATE LIMITED, 201/C-WING, SILVER BELL VASANT GARDEN, MULUND (W) MUMBAI MH 400080 IN.
     
 *   **Device** means any device that can access the Service such as a computer, a cellphone or a digital tablet.
     
