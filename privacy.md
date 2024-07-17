@@ -74,6 +74,12 @@ When You access the Service by or through a mobile device, We may collect certai
 
 We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.
 
+### Location Data
+
+Location data is collected when permission is explicitly granted by You. Location Data refers to information used to determine or track the physical location of a device, including GPS coordinates, Wi-Fi data, cell tower data, IP address, Bluetooth data, and sensor data. This data supports location-based features such as real-time navigation and historical position tracking. The location data is stored on device and shared with our application backend when permitted or requested by You to support additional features.
+
+Application development team may access anonymized location data to develop new features, debug issues, or provide technical support. Any personally identifiable data is not shared with any third parties. You can request the deletion of personally identifiable data at any time.
+
 ### Tracking Technologies and Cookies
 
 We use Cookies and similar tracking technologies to track the activity on Our Service and store certain information. Tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyze Our Service. The technologies We use may include:
