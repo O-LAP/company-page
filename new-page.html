@@ -143,27 +143,53 @@
         .work-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 1.5rem;
+            row-gap: 10rem;
+            column-gap: 1.5rem;
+            padding: 1.5rem;
+            margin: 2rem;
+            margin-top: 8rem;
         }
 
         .work-card {
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            height: 12rem;
+        }
+
+        .work-card .content-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            position: absolute;
+            top: -6rem;
+        }
+
+        .work-card .img-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .img-container img {
+            height: 10rem;
+            max-width: 80%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .work-card .text-container {
+            font-size: 1.25rem;
             padding: 1.5rem;
         }
 
-        .work-card img {
-            width: 100%;
-            height: 160px;
-            object-fit: cover;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-        }
-
-        .work-card h3 {
-            font-size: 1.25rem;
-            margin-bottom: 0.5rem;
+        .work-card .text-container p {
+            font-size: 1rem;
         }
 
         /* About and Contact */
@@ -347,34 +373,59 @@
                 <h2>Our Work</h2>
                 <div class="work-grid">
                     <div class="work-card">
-                        <img src="/images/hh_bidfriday/screenshot_01A.png" alt="Screenshot of bidfriday">
-                        <h3>bidfriday</h3>
-                        <p>Simplify and automate the bidding process for your projects.</p>
+                        <div class="content-container">
+                            <div class="img-container">
+                                <img src="/images/hh_bidfriday/screenshot_01A.png" alt="Screenshot of bidfriday">
+                            </div>
+                            <div class="text-container">
+                                <h3>BidFriday</h3>
+                                <p>Simplify and automate the bidding process for your projects.</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="work-card">
-                        <img src="/images/hh_nilasky/screenshot_01A.png" alt="Screenshot of nilasky">
-                        <h3>nilasky</h3>
-                        <p>Easy access to key information on Indian airports and aviation.</p>
+                        <div class="content-container">
+                            <div class="img-container">
+                                <img src="/images/hh_nilasky/screenshot_01A.png" alt="Screenshot of nilasky">
+                            </div>
+                            <div class="text-container">
+                                <h3>NilaSky</h3>
+                                <p>Easy access to key information on Indian airports and aviation.</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="work-card">
-                        <img src="/images/hh_vyrall/screenshot_01A.jpg" alt="Screenshot of vyrall">
-                        <h3>vyrall</h3>
-                        <p>A beautifully crafted platform for the influencer gig economy.</p>
+                        <div class="content-container">
+                            <div class="img-container">
+                                <img src="/images/hh_vyrall/screenshot_01A.jpg" alt="Screenshot of vyrall">
+                            </div>
+                            <div class="text-container">
+                                <h3>Vyrall</h3>
+                                <p>A beautifully crafted platform for the influencer gig economy.</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="work-card">
-                        <img src="/images/hh_gitflows/screenshot_01A.png" alt="Screenshot of gitflows">
-                        <h3>gitflows</h3>
-                        <p>A repository management system based on the git-flow branching model.</p>
+                        <div class="content-container">
+                            <div class="img-container">
+                                <img src="/images/hh_gitflows/screenshot_01A.png" alt="Screenshot of gitflows">
+                            </div>
+                            <div class="text-container">
+                                <h3>GitFlows</h3>
+                                <p>A repository management system based on the git-flow branching model.</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="work-card">
-                        <img src="/images/hh_billandmatt/screenshot_01A.png" alt="Screenshot of billandmatt">
-                        <h3>billandmatt</h3>
-                        <p>Automate, communicate and streamline repetitive tasks in construction projects.</p>
-                    </div>
-                    <div class="work-card">
-                        <img src="https://via.placeholder.com/300x200" alt="Screenshot of urbanscale">
-                        <h3>urbanscale</h3>
-                        <p>Platform for public institutions to issue bonds and individuals to invest.</p>
+                        <div class="content-container">
+                            <div class="img-container">
+                                <img src="/images/hh_billandmatt/screenshot_01A.png" alt="Screenshot of billandmatt">
+                            </div>
+                            <div class="text-container">
+                                <h3>Bill and Matt</h3>
+                                <p>Automate, communicate and streamline construction projects.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
