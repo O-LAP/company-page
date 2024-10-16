@@ -166,7 +166,20 @@
             margin-bottom: 0.5rem;
         }
 
-        /* Contact form */
+        /* About and Contact */
+        .about-and-contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .about-and-contact-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+
         form {
             display: grid;
             gap: 1rem;
@@ -260,6 +273,10 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
+            .about-and-contact-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
             .footer-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
@@ -288,23 +305,16 @@
             <div class="nav-links">
                 <a href="#services">Services</a>
                 <a href="#work">Our Work</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact Us</a>
+                <a href="#about-and-contact">About</a>
+                <a href="#about-and-contact">Contact Us</a>
             </div>
             <button class="menu-toggle">☰</button>
         </div>
     </nav>
 
-    <header>
-        <div class="container">
-            <h1>Our Expertise</h1>
-        </div>
-    </header>
-
     <main>
         <div class="container">
             <section id="services">
-                <h2>Our Services</h2>
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="service-icon">📱</div>
@@ -330,9 +340,6 @@
                             business.</p>
                         <img src="https://via.placeholder.com/300x200" alt="Frontier Tech Illustration">
                     </div>
-                </div>
-                <div style="text-align: center; margin-top: 2rem;">
-                    <a href="#contact" class="cta-button">Let's Innovate Together</a>
                 </div>
             </section>
 
@@ -372,29 +379,49 @@
                 </div>
             </section>
 
-            <section id="about">
-                <h2>About O-LAP</h2>
-                <p>Created in 2014 in Mumbai, O-LAP is an Indian software development company that produces innovative
-                    online software for the architecture, project management, design and furniture industries.</p>
-            </section>
+            <section id="about-and-contact">
 
-            <section id="contact">
-                <h2>Contact Us</h2>
-                <form id="contact-form">
-                    <div>
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+                <div class="about-and-contact-grid">
+                    <div class="about-and-contact-card">
+                        <div>
+                            <h2>About O-LAP</h2>
+                            <p>
+                                Founded in 2014 in Mumbai, O-LAP is an Indian software development company specializing
+                                in innovative digital solutions
+                                for the architecture, project management, design, and furniture industries.
+                                <br />
+                                <br />
+                                Our expertise spans a wide range of technologies, including streaming content,
+                                blockchain, and GIS solutions, all aimed
+                                at delivering the best possible outcomes for our partners and users. Connect with us to
+                                explore how we can collaborate
+                                on your next project.
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+
+                    <div class="about-and-contact-card">
+                        <div>
+                            <h2>Contact Us</h2>
+                            <form id="contact-form">
+                                <div>
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div>
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit">Send Message</button>
+                            </form>
+                        </div>
                     </div>
-                    <div>
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit">Send Message</button>
-                </form>
+                </div>
+
             </section>
         </div>
     </main>
@@ -418,15 +445,6 @@
                     <p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                            </path>
-                        </svg>
-                        +91 123 456 7890
-                    </p>
-                    <p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
                             </path>
                             <polyline points="22,6 12,13 2,6"></polyline>
@@ -438,8 +456,8 @@
                     <h3>Site Navigation</h3>
                     <a href="#services">Services</a>
                     <a href="#work">Our Work</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact Us</a>
+                    <a href="#about-and-contact">About</a>
+                    <a href="#about-and-contact">Contact Us</a>
                 </div>
             </div>
             <div class="footer-bottom">
