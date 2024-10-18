@@ -104,16 +104,13 @@
 
         .carousel-item {
             flex: 0 0 100%;
-            height: 400px;
+            min-height: 400px;
+            max-height: 60vh;
+            padding: 60px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-align: center;
-            color: #fff;
-            padding: 2rem;
-            background-size: cover;
-            background-position: center;
             position: relative;
         }
 
@@ -124,14 +121,13 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
             z-index: 1;
         }
 
         .carousel-content {
             position: relative;
             z-index: 2;
-            max-width: 600px;
+            width: 80%;
         }
 
         .carousel-item h3 {
@@ -157,22 +153,26 @@
             width: 12px;
             height: 12px;
             border: none;
-            background-color: rgba(255, 255, 255, 0.5);
             cursor: pointer;
+            transition: background-color 0.3s;
         }
 
         .carousel-nav button.active {
             background-color: #fff;
         }
 
+        .carousel-nav button:hover {
+            background-color: #2563eb;
+        }
+
         .carousel-arrow {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.5);
             color: #fff;
+            background-color: none;
             border: none;
-            font-size: 2rem;
+            font-size: 1.5rem;
             padding: 10px;
             cursor: pointer;
             z-index: 3;
@@ -277,17 +277,14 @@
         }
 
         button {
-            background-color: #3b82f6;
-            color: #fff;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
+            background-color: none;
             cursor: pointer;
-            transition: background-color 0.3s;
+            border-radius: 4px;
+            transition: color 0.3s;
         }
 
         button:hover {
-            background-color: #2563eb;
+            color: #2563eb;
         }
 
         /* Footer */
@@ -394,7 +391,7 @@
     <main>
         <section id="services">
             <div class="carousel">
-                <div class="carousel-item" style="background-image: url('https://via.placeholder.com/1200x400');">
+                <div class="carousel-item">
                     <div class="carousel-content">
                         <h3>Digital Ecosystem Architects</h3>
                         <p>We craft seamless digital experiences across web, mobile, and desktop platforms. Our
@@ -404,7 +401,7 @@
                             and design.</p>
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url('https://via.placeholder.com/1200x400');">
+                <div class="carousel-item">
                     <div class="carousel-content">
                         <h3>Spatial Innovation Pioneers</h3>
                         <p>We push the boundaries of 3D, CAD, and GIS technologies. Our team transforms complex
@@ -413,7 +410,7 @@
                             detail.</p>
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url('https://via.placeholder.com/1200x400');">
+                <div class="carousel-item">
                     <div class="carousel-content">
                         <h3>Frontier Tech Trailblazers</h3>
                         <p>We're at the forefront of technological evolution. From AI and blockchain to IoT and
