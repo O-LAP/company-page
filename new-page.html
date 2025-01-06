@@ -579,7 +579,7 @@
     <script>
 
         async function addRowToGoogleSheet(data) {
-            const endpointUrl = 'https://script.google.com/macros/s/AKfycbzh_Hrf-aRa0P6bIXXH0bdKf82Z4KN3GeTsmDrkYOVZ84OE4duaL0gifqLHi9dkVDG8/exec';
+            const endpointUrl = 'https://script.google.com/macros/s/AKfycbz2UE_AjnggkcLRMdLIOPb5jeJPOwdZ3B5fYt_dxITkpmf514bfvV--_N_3k-30_na4/exec';
 
             try {
                 const response = await fetch(endpointUrl, {
@@ -628,10 +628,9 @@
             e.preventDefault();
             const formData = new FormData(form);
             const data = Object.fromEntries(formData);
-            console.log('Form submitted with data:', data);
-            // Send the data to a server
+            console.log('Submitting form with data:', data);
             await addRowToGoogleSheet(data)
-            form.reset();
+            // form.reset();
         });
 
         // Carousel
