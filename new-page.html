@@ -513,8 +513,7 @@
                     <div class="about-and-contact-card">
                         <div>
                             <h2>Contact Us</h2>
-                            <form id="contact-form" method="post"
-                                action="https://script.google.com/macros/s/AKfycbwhJhEbrFAkJIvIM1gN5x2_kEn_1s3rjxUzAVaJQZtG4XbK_QB2BvV3UJcIGd9i7wuq/exec">
+                            <form id="contact-form">
                                 <div>
                                     <label for="name">Name</label>
                                     <input type="text" id="name" name="name" required>
@@ -594,6 +593,39 @@
                     behavior: 'smooth'
                 });
             });
+        });
+
+        // Form submission
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+            console.log('Submitting form with data:', data);
+            const endpointUrl = 'https://script.google.com/macros/s/AKfycbwhJhEbrFAkJIvIM1gN5x2_kEn_1s3rjxUzAVaJQZtG4XbK_QB2BvV3UJcIGd9i7wuq/exec';
+
+            try {
+                const response = await fetch(endpointUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                });
+
+                const result = await response.json();
+                if (response.ok) {
+                    console.log('Row added successfully:', result);
+                    alert('Thank you for your message. We will get back to you soon!');
+                } else {
+                    console.error('Error adding row:', result);
+                    alert('There was some unexpected error sending. We request you to mail us at contact@o-lap.com');
+                }
+            } catch (error) {
+                console.error('Request failed:', error);
+                alert('There was some unexpected error sending. We request you to mail us at contact@o-lap.com');
+            }
+            // form.reset();
         });
 
         // Carousel
