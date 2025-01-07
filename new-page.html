@@ -526,7 +526,10 @@
                                     <label for="message">Message</label>
                                     <textarea id="message" name="message" rows="4" required></textarea>
                                 </div>
-                                <button type="submit">Send Message</button>
+                                <div>
+                                    <button id="form-button-reset">Reset</button>
+                                    <button id="form-button-submit" type="submit">Send Message</button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -605,6 +608,8 @@
             const endpointUrl = "https://script.google.com/macros/s/AKfycbwnblNL1Wfj9uPe495bOmS5xNOSxp_iGtV_FlOdz_XxRAf3NTVTpfvB0tb5Ai-vLmQM/exec";
 
             try {
+                document.getElementById('form-button-submit').disabled = true;
+                document.getElementById('form-button-reset').disabled = true;
                 const response = await fetch(endpointUrl, {
                     redirect: 'follow',
                     method: 'POST',
@@ -626,7 +631,14 @@
                 console.error('Request failed:', error);
                 alert('There was some unexpected error sending. We request you to mail us at contact@o-lap.com');
             }
-            // form.reset();
+            finally {
+                document.getElementById('form-button-submit').disabled = false;
+                document.getElementById('form-button-reset').disabled = false;
+            }
+        });
+
+        document.getElementById('form-button-reset').addEventListener("click", async (e) => {
+            document.getElementById('contact-form').reset();
         });
 
         // Carousel
