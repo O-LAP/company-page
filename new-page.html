@@ -606,6 +606,7 @@
 
             try {
                 const response = await fetch(endpointUrl, {
+                    redirect: 'follow',
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
