@@ -286,7 +286,7 @@
             transition: color 0.3s;
         }
 
-        button:hover {
+        .hoverable:hover {
             color: #2563eb;
         }
 
@@ -527,8 +527,12 @@
                                     <textarea id="message" name="message" rows="4" required></textarea>
                                 </div>
                                 <div>
-                                    <button id="form-button-reset">Reset</button>
-                                    <button id="form-button-submit" type="submit">Send Message</button>
+                                    <button id="form-button-reset" class="hoverable">
+                                        Reset
+                                    </button>
+                                    <button id="form-button-submit" class="hoverable" type="submit">
+                                        Send Message
+                                    </button>
                                 </div>
                             </form>
                         </div>
@@ -609,7 +613,11 @@
 
             try {
                 document.getElementById('form-button-submit').disabled = true;
+                document.getElementById('form-button-submit').style.cursor = "not-allowed";
+                document.getElementById('form-button-submit').classList.toggle("hoverable");
                 document.getElementById('form-button-reset').disabled = true;
+                document.getElementById('form-button-reset').style.cursor = "not-allowed";
+                document.getElementById('form-button-reset').classList.toggle("hoverable");
                 const response = await fetch(endpointUrl, {
                     redirect: 'follow',
                     method: 'POST',
@@ -633,7 +641,11 @@
             }
             finally {
                 document.getElementById('form-button-submit').disabled = false;
+                document.getElementById('form-button-submit').style.cursor = "pointer";
+                document.getElementById('form-button-submit').classList.toggle("hoverable");
                 document.getElementById('form-button-reset').disabled = false;
+                document.getElementById('form-button-reset').style.cursor = "pointer";
+                document.getElementById('form-button-reset').classList.toggle("hoverable");
             }
         });
 
