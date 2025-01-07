@@ -281,13 +281,34 @@
             font-size: 1rem;
             border: none;
             padding: 6px;
-            background-color: none;
+            background-color: #f1f1f1;
+            color: #676767;
             border-radius: 4px;
             transition: color 0.3s;
         }
 
-        .hoverable:hover {
-            color: #2563eb;
+        button:hover {
+            filter: brightness(.9);
+        }
+
+        button:disabled {
+            cursor: not-allowed;
+            filter: brightness(.9);
+            filter: opacity(0.7);
+        }
+
+        .form-button-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            gap: 6px;
+        }
+
+        #form-button-submit {
+            font-weight: bold;
+            background-color: #2563eb;
+            color: #ffffff;
+            padding: 6px 18px 6px 18px;
         }
 
         /* Footer */
@@ -526,7 +547,7 @@
                                     <label for="message">Message</label>
                                     <textarea id="message" name="message" rows="4" required></textarea>
                                 </div>
-                                <div>
+                                <div class="form-button-container">
                                     <button id="form-button-reset" class="hoverable">
                                         Reset
                                     </button>
@@ -613,11 +634,7 @@
 
             try {
                 document.getElementById('form-button-submit').disabled = true;
-                document.getElementById('form-button-submit').style.cursor = "not-allowed";
-                document.getElementById('form-button-submit').classList.toggle("hoverable");
                 document.getElementById('form-button-reset').disabled = true;
-                document.getElementById('form-button-reset').style.cursor = "not-allowed";
-                document.getElementById('form-button-reset').classList.toggle("hoverable");
                 const response = await fetch(endpointUrl, {
                     redirect: 'follow',
                     method: 'POST',
@@ -641,11 +658,7 @@
             }
             finally {
                 document.getElementById('form-button-submit').disabled = false;
-                document.getElementById('form-button-submit').style.cursor = "pointer";
-                document.getElementById('form-button-submit').classList.toggle("hoverable");
                 document.getElementById('form-button-reset').disabled = false;
-                document.getElementById('form-button-reset').style.cursor = "pointer";
-                document.getElementById('form-button-reset').classList.toggle("hoverable");
             }
         });
 
