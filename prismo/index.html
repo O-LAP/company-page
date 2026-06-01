@@ -256,10 +256,40 @@
             padding: 1.5rem;
         }
 
-        .three-column-grid {
+        .who-uses-grid {
             display: grid;
-            grid-template-columns: 1fr;
-            gap: 1.5rem;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.9rem;
+            margin-top: 1rem;
+        }
+
+        .who-uses-card {
+            background-color: #f8fbff;
+            border: 1px solid #dbeafe;
+            border-radius: 8px;
+            padding: 0.9rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 0.45rem;
+        }
+
+        .who-uses-icon {
+            font-size: 2.3rem;
+            line-height: 1;
+        }
+
+        .who-uses-title {
+            font-size: 0.98rem;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .who-uses-description {
+            font-size: 0.9rem;
+            line-height: 1.45;
         }
 
         form {
@@ -395,8 +425,8 @@
                 grid-template-columns: repeat(3, 1fr);
             }
 
-            .three-column-grid {
-                grid-template-columns: repeat(3, 1fr);
+            .who-uses-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
             }
         }
     </style>
@@ -437,19 +467,64 @@
         </section>
 
         <section id="why-prismo">
-            <h2>Why Teams Choose Prismo</h2>
-            <h3>Fabric Mockups</h3>
-            <p>Generate realistic previews of textile patterns on fabrics, panels, and production samples.</p>
-            <h3 style="margin-top: 1rem;">Apparel Visualization</h3>
-            <p>Apply artwork to shirts, dresses, boxers, and other garment templates with consistent placement and
-                presentation.</p>
-            <h3 style="margin-top: 1rem;">Batch Processing</h3>
-            <p>Process large collections of artwork automatically and generate mockups at scale.</p>
-            <h3 style="margin-top: 1rem;">Production-Ready Exports</h3>
-            <p>Create high-resolution JPG and PNG outputs suitable for presentations, merchandising, sampling, and
-                approvals.</p>
-            <h3 style="margin-top: 1rem;">Offline &amp; Perpetual License</h3>
-            <p>Own the software permanently and operate entirely offline without recurring subscription fees.</p>
+            <div class="about-and-contact-grid">
+                <div>
+                    <h2>Why Teams Choose Prismo</h2>
+                    <h3>Fabric Mockups</h3>
+                    <p>Generate realistic previews of textile patterns on fabrics, panels, and production samples.</p>
+                    <h3 style="margin-top: 1rem;">Apparel Visualization</h3>
+                    <p>Apply artwork to shirts, dresses, boxers, and other garment templates with consistent placement
+                        and presentation.</p>
+                    <h3 style="margin-top: 1rem;">Batch Processing</h3>
+                    <p>Process large collections of artwork automatically and generate mockups at scale.</p>
+                    <h3 style="margin-top: 1rem;">Production-Ready Exports</h3>
+                    <p>Create high-resolution JPG and PNG outputs suitable for presentations, merchandising, sampling,
+                        and approvals.</p>
+                    <h3 style="margin-top: 1rem;">Offline &amp; Perpetual License</h3>
+                    <p>Own the software permanently and operate entirely offline without recurring subscription fees.
+                    </p>
+                </div>
+                <div class="about-and-contact-card">
+                    <h2>Who Uses Prismo</h2>
+                    <div class="who-uses-grid">
+                        <article class="who-uses-card">
+                            <div class="who-uses-icon">🧩</div>
+                            <h3 class="who-uses-title">Merchandising Teams</h3>
+                            <p class="who-uses-description">Create consistent product previews for catalogs,
+                                presentations, and internal reviews.</p>
+                        </article>
+                        <article class="who-uses-card">
+                            <div class="who-uses-icon">🎨</div>
+                            <h3 class="who-uses-title">Textile Designers</h3>
+                            <p class="who-uses-description">Visualize print patterns across multiple products before
+                                production.</p>
+                        </article>
+                        <article class="who-uses-card">
+                            <div class="who-uses-icon">🧪</div>
+                            <h3 class="who-uses-title">Sampling Departments</h3>
+                            <p class="who-uses-description">Generate approval-ready mockups quickly and accurately.</p>
+                        </article>
+                        <article class="who-uses-card">
+                            <div class="who-uses-icon">🖨️</div>
+                            <h3 class="who-uses-title">Digital Print Studios</h3>
+                            <p class="who-uses-description">Automate large-scale mockup generation from artwork
+                                collections.</p>
+                        </article>
+                        <article class="who-uses-card">
+                            <div class="who-uses-icon">👕</div>
+                            <h3 class="who-uses-title">Apparel Manufacturers</h3>
+                            <p class="who-uses-description">Prepare product visuals for buyers, merchandising teams,
+                                and production planning.</p>
+                        </article>
+                        <article class="who-uses-card">
+                            <div class="who-uses-icon">🏠</div>
+                            <h3 class="who-uses-title">Home Furnishing Brands</h3>
+                            <p class="who-uses-description">Create previews for curtains, upholstery, cushions, and
+                                textile products.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section>
@@ -465,26 +540,18 @@
                         <li>No internet connection required</li>
                     </ul>
                 </div>
-                <div class="about-and-contact-card">
-                    <h2>Who Uses Prismo</h2>
-                    <h3>Merchandising Teams</h3>
-                    <p>Create consistent product previews for catalogs, presentations, and internal reviews.</p>
-                    <h3 style="margin-top: 1rem;">Textile Designers</h3>
-                    <p>Visualize print patterns across multiple products before production.</p>
-                    <h3 style="margin-top: 1rem;">Sampling Departments</h3>
-                    <p>Generate approval-ready mockups quickly and accurately.</p>
-                    <h3 style="margin-top: 1rem;">Digital Print Studios</h3>
-                    <p>Automate large-scale mockup generation from artwork collections.</p>
-                    <h3 style="margin-top: 1rem;">Apparel Manufacturers</h3>
-                    <p>Prepare product visuals for buyers, merchandising teams, and production planning.</p>
-                    <h3 style="margin-top: 1rem;">Home Furnishing Brands</h3>
-                    <p>Create previews for curtains, upholstery, cushions, and textile products.</p>
+                <div>
+                    <h2>Proven in Production</h2>
+                    <p>Prismo is actively used in production environments where teams need to generate large volumes of
+                        mockups while maintaining visual consistency across merchandising and sampling workflows.</p>
+                    <p style="margin-top: 0.75rem;">The software has been deployed across multiple client devices and
+                        has supported the generation of thousands of production-ready mockups.</p>
                 </div>
             </div>
         </section>
 
         <section id="technical-specifications">
-            <div class="three-column-grid">
+            <div class="about-and-contact-grid">
                 <div class="about-and-contact-card">
                     <h2>Technical Specifications</h2>
                     <h3>Input Formats</h3>
@@ -505,13 +572,6 @@
                         <li>Multi-artwork workflows</li>
                         <li>Consistent template-based output</li>
                     </ul>
-                </div>
-                <div>
-                    <h2>Proven in Production</h2>
-                    <p>Prismo is actively used in production environments where teams need to generate large volumes of
-                        mockups while maintaining visual consistency across merchandising and sampling workflows.</p>
-                    <p style="margin-top: 0.75rem;">The software has been deployed across multiple client devices and
-                        has supported the generation of thousands of production-ready mockups.</p>
                 </div>
                 <div>
                     <h2>Ideal For</h2>
