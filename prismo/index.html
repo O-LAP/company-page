@@ -306,6 +306,14 @@
             border: 1px solid #dbeafe;
         }
 
+        .hero-video {
+            width: min(900px, 100%);
+            border-radius: 12px;
+            border: 1px solid #dbeafe;
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.15);
+            background: #000;
+        }
+
         .how-it-works-grid {
             display: grid;
             grid-template-columns: 1fr;
@@ -342,6 +350,39 @@
         .sample-card h3 {
             font-size: 1rem;
             margin-bottom: 0.35rem;
+        }
+
+        .samples-details {
+            margin-top: 1rem;
+        }
+
+        .samples-details summary {
+            list-style: none;
+        }
+
+        .samples-details summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .sample-thumbnails-slider {
+            margin-top: 0.9rem;
+            display: flex;
+            gap: 0.75rem;
+            overflow-x: auto;
+            padding: 0.25rem 0.1rem 0.4rem;
+            scroll-snap-type: x mandatory;
+        }
+
+        .sample-thumbnails-slider img {
+            width: 180px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #dbeafe;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+            background-color: #fff;
         }
 
         form {
@@ -523,6 +564,17 @@
                     src="/images/hh_prismo/prismo-mockup-preview.jpg"
                     alt="Prismo mockup" />
             </div>
+            <details>
+                <summary>
+                  Watch Demo Video
+                </summary>
+                <div>
+                  <video class="hero-video" controls preload="metadata">
+                      <source src="/images/hh_prismo/prismo-demo-video.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+                </div>
+            </details>
         </section>
 
         <section>
@@ -685,8 +737,19 @@
 
         <section id="samples">
             <h2>Samples</h2>
-            <div class="samples-grid">
-            </div>
+            <details class="samples-details">
+                <summary>
+                    <button type="button">View Samples</button>
+                </summary>
+                <div class="sample-thumbnails-slider">
+                    <img src="/images/hh_prismo/prismo-mockup-preview.jpg" alt="Sample thumbnail 1">
+                    <img src="/images/hh_prismo/prismo-mockup-preview.jpg" alt="Sample thumbnail 2">
+                    <img src="/images/hh_prismo/prismo-mockup-preview.jpg" alt="Sample thumbnail 3">
+                    <img src="/images/hh_prismo/prismo-mockup-preview.jpg" alt="Sample thumbnail 4">
+                    <img src="/images/hh_prismo/prismo-mockup-preview.jpg" alt="Sample thumbnail 5">
+                    <img src="/images/hh_prismo/prismo-mockup-preview.jpg" alt="Sample thumbnail 6">
+                </div>
+            </details>
         </section>
 
         <section id="request-demo">
