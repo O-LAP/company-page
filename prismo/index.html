@@ -292,6 +292,58 @@
             line-height: 1.45;
         }
 
+        .hero-image-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-image {
+            width: min(900px, 100%);
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
+            border: 1px solid #dbeafe;
+        }
+
+        .how-it-works-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .how-it-works-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.25rem;
+        }
+
+        .how-it-works-card h3 {
+            font-size: 1.05rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .samples-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .sample-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+        }
+
+        .sample-card h3 {
+            font-size: 1rem;
+            margin-bottom: 0.35rem;
+        }
+
         form {
             display: grid;
             gap: 1rem;
@@ -411,6 +463,14 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
+            .how-it-works-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .samples-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
             .footer-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
@@ -455,6 +515,14 @@
             <h1 style="font-size: 2rem; text-align: center; margin-bottom: 0.75rem;">Prismo</h1>
             <p style="text-align: center; font-weight: 700; margin-bottom: 0.25rem;">Product Mockup
                 Automation Software</p>
+        </section>
+
+        <section>
+            <div class="hero-image-wrapper">
+                <img class="hero-image"
+                    src="/images/hh_prismo/prismo-mockup-preview.jpg"
+                    alt="Prismo mockup" />
+            </div>
         </section>
 
         <section>
@@ -586,6 +654,38 @@
                         <li>Product development teams</li>
                     </ul>
                 </div>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <h2>How it works</h2>
+            <div class="how-it-works-grid">
+                <article class="how-it-works-card">
+                    <h3>1. Select a template</h3>
+                    <p>Choose from predefined templates representing various products. Load the template into your
+                        workspace to define the structure of your mockup.</p>
+                </article>
+                <article class="how-it-works-card">
+                    <h3>2. Import and position artwork</h3>
+                    <p>Import your design files (JPG, PNG, TIFF). Position and manage multiple artworks and variants
+                        on the template to create complex compositions.</p>
+                </article>
+                <article class="how-it-works-card">
+                    <h3>3. Fine-tune and transform</h3>
+                    <p>Use advanced features like scaling and labeling to make precise adjustments. Preview the final
+                        image to ensure it meets your production standards.</p>
+                </article>
+                <article class="how-it-works-card">
+                    <h3>4. Export high-quality images</h3>
+                    <p>Generate final mockup images in high-resolution JPG or PNG format. Use the batch export
+                        settings to process multiple files quickly and consistently.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="samples">
+            <h2>Samples</h2>
+            <div class="samples-grid">
             </div>
         </section>
 
