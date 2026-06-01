@@ -307,11 +307,21 @@
         }
 
         .hero-video {
-            width: min(900px, 100%);
+            width: min(450px, 100%);
             border-radius: 12px;
             border: 1px solid #dbeafe;
             box-shadow: 0 8px 20px rgba(37, 99, 235, 0.15);
             background: #000;
+        }
+
+        .hero-video-details {
+            text-align: center;
+        }
+
+        .hero-video-content {
+            display: flex;
+            justify-content: center;
+            margin-top: 0.75rem;
         }
 
         .how-it-works-grid {
@@ -564,11 +574,11 @@
                     src="/images/hh_prismo/prismo-mockup-preview.jpg"
                     alt="Prismo mockup" />
             </div>
-            <details>
+            <details class="hero-video-details">
                 <summary>
                   Watch Demo Video
                 </summary>
-                <div>
+                <div class="hero-video-content">
                   <video class="hero-video" controls preload="metadata">
                       <source src="/images/hh_prismo/prismo-demo-video.mp4" type="video/mp4">
                       Your browser does not support the video tag.
